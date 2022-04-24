@@ -39,9 +39,9 @@ function App() {
         <section className='content-container'>
          <FirstPage></FirstPage>
         </section>
-        <section className='content-container'>
+        {/* <section className='content-container'>
           <SecondPage></SecondPage>
-        </section>
+        </section> */}
         <Menubar setCol={setCol}></Menubar>  
       </ColContext.Provider> 
     </ThemeContext.Provider>

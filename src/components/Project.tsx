@@ -47,7 +47,7 @@ export default function Project() {
                         </PartList>  
                         
                     </PartItem>
-                    <PartItem  
+                    {/* <PartItem  
                         info="合作开发  为管理小程序富文本和用户信息的管理后台，主要负责项目前期基础搭建工作"
                         title="上港联 管理小程序的富文本后台"
                         technique={['vue3']}
@@ -60,7 +60,7 @@ export default function Project() {
                                 改造quill.js封装成vue3组件，定制toolbar，改造上传视频和图片模块，支持按钮和拖拽上传，并避免文件名重复，使其与ali-oss结合，上传结束后回填存储后的url到富文本
                             </PartItem>
                         </PartList>
-                    </PartItem>
+                    </PartItem> */}
                 </PartList>
             </PartList>
     </div>
