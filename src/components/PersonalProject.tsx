@@ -10,13 +10,21 @@ export default function PersonalProject() {
       <Divider text="个人作品" />
       <PartList>
         <PartItem>
-            基于react hook, vite实现，有别于传统的使用html/css，能使用组件开发模式，并添加一些功能扩充，
+            基于react hook的生成简历模板, vite实现，有别于传统的使用html/css，能使用组件开发模式，并添加一些功能扩充，
             支持A4预览，全屏查看，彩色和黑白，单列双列不同版本
             保存pdf利用vite的开发阶段使用esbuild，不用通过babel转译es6模板，缩短生成页面时间，利用puppeteer，
             无需手动打开页面再另存为pdf生成，只需要运行脚本就可以快速构建
             并利用github page方便线上访问
             <Icon
               text="https://github.com/cyanxxx/resume"
+            />
+         
+        </PartItem>
+        <PartItem>
+            MultipleSearchInput，结合下拉框和输入框，实现从下拉框选择或直接键入多个值到输入框，支持值为对象的情况和值不在列表里新建值，或是严格遵守值必须在列表里的情况
+            ，同时支持下拉框的列表远程拉取，滚动加载
+            <Icon
+              text="https://github.com/cyanxxx/multiple-search-input/tree/v1.0"
             />
          
         </PartItem>
