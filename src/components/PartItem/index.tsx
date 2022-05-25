@@ -7,6 +7,7 @@ interface Props{
     title?: React.ReactNode;
     technique?: string[];
     append?: boolean;
+    noStyle?: boolean;
 }
 export default function PartItem({children, info, title, technique, append}: Props) {
   return (
@@ -29,9 +30,9 @@ export default function PartItem({children, info, title, technique, append}: Pro
         </li>
   )
 }
-export function PartList({children}: Props) {
+export function PartList({children, noStyle}: Props) {
   return (
-        <ul>
+        <ul className={noStyle? 'no-style' : ''}>
             {children}
         </ul>
   )

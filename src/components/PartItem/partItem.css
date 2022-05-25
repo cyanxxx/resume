@@ -24,3 +24,6 @@
     background-color: var(--background-color);
     color: var(--color);
 }
+.no-style{
+    list-style: none;
+}

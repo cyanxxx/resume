@@ -9,6 +9,13 @@ export default function PersonalProject() {
     <div>
       <Divider text="个人作品" />
       <PartList>
+      <PartItem>
+            油猴脚本，在阅读英文文档时可以选择加粗前缀或大写首字母方式阅读
+            <Icon
+              text="https://github.com/cyanxxx/text-utils"
+            />
+         
+        </PartItem>
         <PartItem>
             基于react hook的生成简历模板, vite实现，有别于传统的使用html/css，能使用组件开发模式，并添加一些功能扩充，
             支持A4预览，全屏查看，彩色和黑白，单列双列不同版本
