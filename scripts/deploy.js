@@ -15,6 +15,7 @@ function deploy() {
     if (error) {
       console.error(`exec error: ${error}`);
       childProcess.execSync('git reset --hard HEAD^')
+      childProcess.execSync('git branch -D gh-pages')
       return;
     }
     console.log(`stdout: ${stdout}`);
