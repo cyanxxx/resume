@@ -1,19 +1,43 @@
-import React from 'react'
-import Divider from './Divider'
-import PartItem, { PartList } from './PartItem'
+import React from "react";
+import Divider from "./Divider";
+import PartItem, { PartList } from "./PartItem";
 
 export default function Project() {
-  return (
-    <div>
-        <Divider text="工作经验" />
+    return (
+        <div>
+            <Divider text="工作经验" />
+            <PartList>
+                <PartItem title="广东咏声动漫股份有限公司 2022.07-2022.11">
+                    <PartList>
+                        <PartItem
+                            info="合作开发  动画制作流程管理后台"
+                            title="in桌面端管理后台系统"
+                            technique={["react", "electron"]}
+                        >
+                            <PartList>
+                                <PartItem>
+                                    高度定制化组件，深入antd的底层rc库，实现符合设计图的下拉菜单组件和树形组件，并利用虚拟滚动列表技术缓解大量数据在页面渲染的压力，实现多列的数据的虚拟滚动，
+                                    能根据视窗大小调整显示数量
+                                </PartItem>
+                                <PartItem>
+                                    通过electron的browserView实现多页签功能，利用原生的多进程功能，其中一个页面崩溃不会影响另一个窗口，并通过webpack实现分页打包，渲染进程间通过分别与主进程通信，进行跨进程通信，利用electron-store保存用户登录信息，
+                                    使窗口之间能读到同一份数据
+                                </PartItem>
+                                <PartItem>
+                                    引入react-query库,优化对异步数据的管理，对异步数据进行缓存，对不经常变动的数据设置新鲜值进行缓存和一个页面内多个组件请求同一份数据也不会进行多次请求，不需要将数据提升到顶层组件进行传递
+                                </PartItem>
+                            </PartList>
+                        </PartItem>
+                    </PartList>
+                </PartItem>
+            </PartList>
             <PartList>
                 <PartItem title="广州市艾森斯软件研发有限公司 2019.09-2022.01"></PartItem>
                 <PartList>
-                    
-                    <PartItem  
+                    <PartItem
                         info="合作开发  为管理小程序富文本和用户信息的管理后台，主要负责项目前期基础搭建工作"
                         title="上港联 管理小程序的富文本后台"
-                        technique={['vue3']}
+                        technique={["vue3"]}
                     >
                         <PartList>
                             <PartItem>
@@ -24,11 +48,11 @@ export default function Project() {
                             </PartItem>
                         </PartList>
                     </PartItem>
-                    <PartItem 
+                    <PartItem
                         info={`负责独立前端开发和生成PDF的Node后端开发 管理用户从其他终端上传的图片和视频，支持不同角色群组对资源进行不同操作，视频发生点和拍摄行径能在地图上查看，添加，跳转等操作，视频和地图整体称为一个案件，一个案件可以由用户批注后下载为pdf`}
                         title="HKPF 图像视频后台管理系统"
-                        technique={['vue2']}
-                        >
+                        technique={["vue2"]}
+                    >
                         <PartList>
                             <PartItem>
                                 通过后端提供的swagger，自动化生成调用服务端api的axios代码，能实时同步后端接口，并减少写调用api接口的时间
@@ -46,10 +70,10 @@ export default function Project() {
                             </PartItem>
                         </PartList>
                     </PartItem>
-                    <PartItem
+                    {/* <PartItem
                         info={`合作开发 旧系统jsp重构成前后端分离办公系统，负责3个子系统的开发，包含出差审批系统，活动审批系统，员工管理系统，近100个表单开发，包括表单校验，计算表单，打印表单，邮件跳转到对应表单审批等功能`}
                         title="ogcio 办公系统审批相关系统"
-                        technique={['react']}
+                        technique={["react"]}
                     >
                         <PartList>
                             <PartItem>
@@ -58,10 +82,10 @@ export default function Project() {
                             <PartItem>
                                 设立service层，负责转换旧系统数据与新系统数据，以适配旧系统返回和接受的数据结构不变下，不影响新系统的基于ui设计的数据结构
                             </PartItem>
-                        </PartList>  
-                    </PartItem>
+                        </PartList>
+                    </PartItem> */}
                 </PartList>
             </PartList>
-    </div>
-  )
+        </div>
+    );
 }
